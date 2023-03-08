@@ -10,7 +10,8 @@
       "@middlewares/*": ["middlewares/*"],
       "@exceptions/*": ["exceptions/*"],
       "@models/*": ["models/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@routers/*": ["routers/*"]
     },
     "outDir": "./build",
     "removeComments": true,

@@ -2,7 +2,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import { config } from 'dotenv';
 import cors from 'cors';
 import morgan from 'morgan';
-import jwt, { JwtPayload } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import { StatusCodes } from 'http-status-codes';
 
 config();
@@ -102,7 +102,7 @@ const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
 
     next();
   } catch (error) {
-    throw error;
+    res.sendStatus(401);
   }
 };
 
